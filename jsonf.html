@@ -1,0 +1,33 @@
+
+<html> 
+  
+<head> 
+    <style> 
+  
+    </style> 
+</head> 
+  
+<body> 
+    <p>Click the button to perform the function:</p> 
+    <table id="tablecreate"> 
+        <tr> 
+            <th>First_Column</th> 
+            <th>Second_Column</th> 
+        </tr> 
+    </table> 
+    <br> 
+    <button onclick="create()">Create</button> 
+  
+    <script> 
+        function create() { 
+            var table = document.getElementById("tablecreate"); 
+            var row = table.insertRow(0); 
+            var cell1 = row.insertCell(0); 
+            var cell2 = row.insertCell(1); 
+            cell1.innerHTML = "New Column-1"; 
+            cell2.innerHTML = "New Column-2"; 
+        } 
+    </script> 
+</body> 
+  
+</html> 
